@@ -1,0 +1,121 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The 500 Greatest Albums of All Time</title>
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+      body {
+        margin: 0;
+      }
+      a {
+        color: black;
+      }
+      .album {
+        padding: 1em;
+        border-bottom: 2px dashed black;
+      }
+      .album-image img {
+        width: 300px;
+        height: 300px;
+      }
+      .footer {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        padding: 10px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+      .footer button {
+        font-size: 24px;
+        padding: 4px 16px;
+      }
+      .album-icons a {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-size: 100%;
+        margin-right: 8px;
+      }
+      .vkmusic {
+        background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSJub25lIj48cGF0aCBmaWxsPSIjMDdGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjQ4MiA3LjAzQy42NjMgMTMuODQ4LjQ2IDI0LjcuNDUzIDQ2YzE5LjA4OCAwIDMxLjAwNi04LjE5NiA0MS40Ni0xNS4zODRDNTAuMDc5IDI1LjAwMSA1Ny4zNTIgMjAgNjYuNDUzIDIwIDgwIDIwIDkxLjgyNiAyOS41NzcgOTguMDk3IDM0LjY1NWMuODg0LjcxNiAxLjY1OCAxLjM0MyAyLjMxMSAxLjg0LS4xOTgtMTUuMTg2LTEuMjYzLTIzLjc0NC02Ljk4NC0yOS40NjZDODYuMzk0IDAgNzUuMDggMCA1Mi40NTMgMGgtNEMyNS44MjYgMCAxNC41MTIgMCA3LjQ4MyA3LjAzWk00NS41MTMgMTAwSDU1LjM5M2gtOS44OFoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGZpbGw9IiNGNDVGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTS40NTMgNDZjMTkuMDg4IDAgMzEuMDA2LTguMTk2IDQxLjQ2LTE1LjM4NEM1MC4wNzkgMjUuMDAxIDU3LjM1MyAyMCA2Ni40NTMgMjAgODAgMjAgOTEuODI2IDI5LjU3NyA5OC4wOTcgMzQuNjU1Yy44ODQuNzE2IDEuNjU4IDEuMzQzIDIuMzExIDEuODQuMDQ1IDMuNDc0LjA0NSA3LjI5My4wNDUgMTEuNTA1djRjMCAyMi42MjcgMCAzMy45NDEtNy4wMyA0MC45Ny02LjcxOCA2LjcxOS0xNy4zNSA3LjAxNi0zOC4wMyA3LjAzaC05Ljg4Yy0yMC42OC0uMDE0LTMxLjMxMi0uMzExLTM4LjAzLTcuMDNDLjQ1MyA4NS45NDIuNDUzIDc0LjYyOC40NTMgNTJ2LTZaIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNzcuOTU0IDUwLjk3NWMwLTIuNDcxIDIuMDI4LTQuNDc1IDQuNS00LjQ3NSAyLjQ3MSAwIDQuNSAyLjAwNCA0LjUgNC40NzV2MTguMDVjMCAyLjQ3MS0yLjAyOSA0LjQ3NS00LjUgNC40NzUtMi40NzIgMC00LjUtMi4wMDQtNC41LTQuNDc1di0xOC4wNVpNNjEuOTU0IDM5LjQ3NWMwLTIuNDcxIDIuMDI5LTQuNDc1IDQuNS00LjQ3NSAyLjQ3MiAwIDQuNSAyLjAwNCA0LjUgNC40NzV2NDEuMDVjMCAyLjQ3Mi0yLjAyOCA0LjQ3NS00LjUgNC40NzUtMi40NzEgMC00LjUtMi4wMDMtNC41LTQuNDc1di00MS4wNVpNNDUuOTU0IDUwLjk3NWMwLTIuNDcxIDIuMDI5LTQuNDc1IDQuNS00LjQ3NSAyLjQ3MiAwIDQuNSAyLjAwNCA0LjUgNC40NzV2MTguMDVjMCAyLjQ3MS0yLjAyOCA0LjQ3NS00LjUgNC40NzUtMi40NzEgMC00LjUtMi4wMDQtNC41LTQuNDc1di0xOC4wNVpNMjkuOTUyIDU3LjQ3NWMwLTIuNDcyIDIuMDI5LTQuNDc1IDQuNS00LjQ3NSAyLjQ3MiAwIDQuNSAyLjAwMyA0LjUgNC40NzV2NS4wNWMwIDIuNDcxLTIuMDI4IDQuNDc1LTQuNSA0LjQ3NS0yLjQ3MSAwLTQuNS0yLjAwNC00LjUtNC40NzV2LTUuMDVaTTEzLjk1MiA1Ny40NzVjMC0yLjQ3MiAyLjAyOS00LjQ3NSA0LjUtNC40NzUgMi40NzIgMCA0LjUgMi4wMDMgNC41IDQuNDc1djUuMDVjMCAyLjQ3MS0yLjAyOCA0LjQ3NS00LjUgNC40NzUtMi40NzEgMC00LjUtMi4wMDQtNC41LTQuNDc1di01LjA1WiIvPjwvc3ZnPg==");
+      }
+      .yandexmusic {
+        background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjUiIGhlaWdodD0iMTY1IiBmaWxsPSJub25lIj48cGF0aCBmaWxsPSIjRkNDQTAwIiBkPSJNMzMuOTgzIDE2Ljg2NWE4MiA4MiAwIDAgMSA0MS40NC0xNS43ODN2MjQuNzQ0YTU3LjQgNTcuNCAwIDEgMCA2My42ODEgNDUuNzQ3bDIwLjc3OC0xNi43MDQtLjAxNC0uMTM1QTgyIDgyIDAgMSAxIDMzLjk4MyAxNi44NjVaIi8+PHBhdGggZmlsbD0iI0ZDM0YxRCIgZD0ibTE0NC4yMTUgMjguNDE0LjA4Ny4yMTgtMTMuODg1IDIyLjA1M2E1Ny42OSA1Ny42OSAwIDAgMC0xOS43MzUtMTguMTJ2NTAuMTg3YzAgMTUuMzk4LTEyLjQ4MiAyNy44OC0yNy44OCAyNy44OC0xNS4zOTcgMC0yNy44OC0xMi40ODItMjcuODgtMjcuODhzMTIuNDgzLTI3Ljg4IDI3Ljg4LTI3Ljg4YTI3Ljc1IDI3Ljc1IDAgMCAxIDE1LjU4IDQuNzU2VjIuMjNjMTguMTAxIDMuNDgyIDM0LjA4NCAxMi45MTUgNDUuODMzIDI2LjE4NFoiLz48L3N2Zz4=");
+      }
+      .spotify {
+        background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OTYgNTEyIj48cGF0aCBmaWxsPSIjMWVkNzYwIiBkPSJNMjQ4IDhDMTExLjEgOCAwIDExOS4xIDAgMjU2czExMS4xIDI0OCAyNDggMjQ4IDI0OC0xMTEuMSAyNDgtMjQ4UzM4NC45IDggMjQ4IDhaIi8+PHBhdGggZD0iTTQwNi42IDIzMS4xYy01LjIgMC04LjQtMS4zLTEyLjktMy45LTcxLjItNDIuNS0xOTguNS01Mi43LTI4MC45LTI5LjctMy42IDEtOC4xIDIuNi0xMi45IDIuNi0xMy4yIDAtMjMuMy0xMC4zLTIzLjMtMjMuNiAwLTEzLjYgOC40LTIxLjMgMTcuNC0yMy45IDM1LjItMTAuMyA3NC42LTE1LjIgMTE3LjUtMTUuMiA3MyAwIDE0OS41IDE1LjIgMjA1LjQgNDcuOCA3LjggNC41IDEyLjkgMTAuNyAxMi45IDIyLjYgMCAxMy42LTExIDIzLjMtMjMuMiAyMy4zem0tMzEgNzYuMmMtNS4yIDAtOC43LTIuMy0xMi4zLTQuMi02Mi41LTM3LTE1NS43LTUxLjktMjM4LjYtMjkuNC00LjggMS4zLTcuNCAyLjYtMTEuOSAyLjYtMTAuNyAwLTE5LjQtOC43LTE5LjQtMTkuNHM1LjItMTcuOCAxNS41LTIwLjdjMjcuOC03LjggNTYuMi0xMy42IDk3LjgtMTMuNiA2NC45IDAgMTI3LjYgMTYuMSAxNzcgNDUuNSA4LjEgNC44IDExLjMgMTEgMTEuMyAxOS43LS4xIDEwLjgtOC41IDE5LjUtMTkuNCAxOS41em0tMjYuOSA2NS42Yy00LjIgMC02LjgtMS4zLTEwLjctMy42LTYyLjQtMzcuNi0xMzUtMzkuMi0yMDYuNy0yNC41LTMuOSAxLTkgMi42LTExLjkgMi42LTkuNyAwLTE1LjgtNy43LTE1LjgtMTUuOCAwLTEwLjMgNi4xLTE1LjIgMTMuNi0xNi44IDgxLjktMTguMSAxNjUuNi0xNi41IDIzNyAyNi4yIDYuMSAzLjkgOS43IDcuNCA5LjcgMTYuNXMtNy4xIDE1LjQtMTUuMiAxNS40eiIvPjwvc3ZnPg==");
+      }
+      .discogs {
+        background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIGlkPSJMYXllcl8xIiB4PSIwIiB5PSIwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMDguNCAxMDguNSIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMTA4LjQgMTA4LjUiPjxzdHlsZT4uc3Qwe2ZpbGw6IzIzMWYyMH08L3N0eWxlPjxwYXRoIGQ9Ik01NC4yLjFjLS4yIDAtLjMgMC0uNS0uMS4yLjEuNC4xLjUuMXoiIGNsYXNzPSJzdDAiLz48cGF0aCBkPSJNMzQuMyA1NC4yYzAtMTEuMSA5LTIwLjEgMjAuMS0yMC4xIDMuNyAwIDcuMSAxIDEwIDIuN2w0LTcuMmMtNC4xLTIuNC04LjktMy43LTE0LTMuNy03LjggMC0xNC45IDMuMi0yMCA4LjMtNS4xIDUuMS04LjMgMTIuMi04LjMgMjAgMCA3LjggMy4xIDE0LjkgOC4zIDIwbC40LjQgNS42LTYgLjEuMWMtMy45LTMuNy02LjItOC44LTYuMi0xNC41ek03NC40IDM0LjRsLTUuNiA2YzMuNCAzLjYgNS41IDguNSA1LjUgMTMuOCAwIDExLjEtOSAyMC4xLTIwIDIwLjEtMy40IDAtNi41LS44LTkuMy0yLjNsLTQgNy4yYzQgMi4xIDguNSAzLjMgMTMuMyAzLjMgNy44IDAgMTQuOS0zLjIgMjAtOC4zIDUuMS01LjEgOC4zLTEyLjIgOC4zLTIwIDAtNy43LTMuMS0xNC43LTguMi0xOS44eiIvPjxwYXRoIGQ9Ik0zOC45IDU0LjJjMC04LjUgNi45LTE1LjQgMTUuNC0xNS40czE1LjQgNi45IDE1LjQgMTUuNC02LjkgMTUuNC0xNS40IDE1LjQtMTUuNC02LjktMTUuNC0xNS40em0uNyAwYzAgOC4xIDYuNiAxNC43IDE0LjcgMTQuN1M2OSA2Mi4zIDY5IDU0LjJzLTYuNi0xNC43LTE0LjctMTQuNy0xNC43IDYuNi0xNC43IDE0Ljd6Ii8+PHBhdGggZD0iTTU2LjcgNTQuMmMwIDEuMy0xLjEgMi40LTIuNCAyLjQtMS4zIDAtMi40LTEuMS0yLjQtMi40IDAtMS4zIDEuMS0yLjQgMi40LTIuNCAxLjQgMCAyLjQgMS4xIDIuNCAyLjR6TTI4LjggODEuMWw1LjctNi4yYy01LjQtNS4yLTguOC0xMi41LTguOC0yMC43IDAtMTUuOSAxMi44LTI4LjcgMjguNy0yOC43IDUuMiAwIDEwIDEuNCAxNC4yIDMuOGw0LTcuNGMtNS40LTMtMTEuNi00LjgtMTguMi00LjgtMTAuMiAwLTE5LjUgNC4yLTI2LjIgMTAuOS02LjcgNi43LTEwLjkgMTYtMTAuOSAyNi4yczQuMSAxOS41IDEwLjkgMjYuMmMuMS4yLjMuNS42Ljd6TTgwLjUgMjhzMC0uMSAwIDBsLTUuOCA2LjFjNS4xIDUuMiA4LjMgMTIuMyA4LjMgMjAuMUM4MyA3MCA3MC4yIDgyLjkgNTQuMyA4Mi45Yy00LjkgMC05LjUtMS4yLTEzLjUtMy40bC00LjEgNy4zYzUuMyAyLjkgMTEuMyA0LjUgMTcuNyA0LjUgMTAuMiAwIDE5LjUtNC4yIDI2LjItMTAuOSA2LjctNi43IDEwLjktMTYgMTAuOS0yNi4yLS4xLTEwLjItNC4zLTE5LjUtMTEtMjYuMnoiLz48cGF0aCBkPSJtODYuOCAyMS43LS4zLS4zLTUuNyA2LjJjNi44IDYuOCAxMS4xIDE2LjIgMTEuMSAyNi42IDAgMjAuNy0xNi44IDM3LjUtMzcuNSAzNy41LTYuNSAwLTEyLjYtMS42LTE3LjktNC41bC00LjEgNy4zYzYuNSAzLjYgMTQgNS42IDIyIDUuNiAxMi43IDAgMjQuMi01LjEgMzIuNS0xMy41IDguMy04LjMgMTMuNC0xOS44IDEzLjQtMzIuNS0uMS0xMi42LTUuMi0yNC4xLTEzLjUtMzIuNHpNMjIuNyA4Ny42bDUuNy02LjJjLTcuMi02LjgtMTEuNy0xNi41LTExLjctMjcuMiAwLTIwLjcgMTYuOC0zNy41IDM3LjUtMzcuNSA2LjcgMCAxMyAxLjggMTguNCA0LjhsNC03LjRDNzAgMTAuNCA2Mi4zIDguMiA1NC4xIDguMmMtMTIuNyAwLTI0LjIgNS4xLTMyLjUgMTMuNUMxMy41IDMwIDguNCA0MS41IDguNCA1NC4yczUuMiAyNC4yIDEzLjUgMzIuNWMuMi4zLjUuNi44Ljl6Ii8+PHBhdGggZD0ibTkyIDE1LjUtNS4yIDUuNmM4LjYgOC40IDEzLjkgMjAuMSAxMy45IDMzLjEgMCAyNS42LTIwLjggNDYuNC00Ni40IDQ2LjQtOC4xIDAtMTUuNi0yLjEtMjIuMi01LjdsLTMuOSA2LjljNy43IDQuMiAxNi42IDYuNyAyNiA2LjcgMjkuOSAwIDU0LjItMjQuMyA1NC4yLTU0LjIgMC0xNS4yLTYuMy0yOS0xNi40LTM4Ljh6TTU1LjEuMWgtLjlDMjQuNS4xLjMgMjQuMSAwIDUzLjh2LjVjMCAxNS41IDYuNiAyOS41IDE3LjEgMzkuNGw1LjQtNS44Yy05LTguNS0xNC42LTIwLjQtMTQuNi0zMy43IDAtMjUuNiAyMC44LTQ2LjQgNDYuNC00Ni40IDguMiAwIDE2IDIuMiAyMi43IDUuOUw4MC43IDdDNzMuMSAyLjcgNjQuNC4yIDU1LjEuMXoiLz48L3N2Zz4=");
+      }
+      @media (min-width: 600px) {
+        .album {
+          display: grid;
+          grid-template-columns: 300px 1fr;
+          grid-gap: 10px;
+        }
+        h2 {
+          margin-top: 0;
+        }
+      }
+    </style>
+    <!-- <script>
+      document.addEventListener("click", (e) => {
+        const href = e.target.href;
+        if (!href) {
+          return;
+        }
+        const hash = new URL(href).hash;
+        if (hash.startsWith("#pos-")) {
+          localStorage.setItem("lastVisited", hash);
+        }
+      });
+      window.addEventListener("load", () => {
+        const lastVisited = localStorage.getItem("lastVisited");
+        if (lastVisited) {
+          window.location = lastVisited;
+        }
+      });
+    </script> -->
+    <script>
+      window.addEventListener("load", () => {
+        document.querySelector("#random").addEventListener("click", () => {
+          const id = Math.ceil(Math.random() * 500);
+          const hash = `#pos-${id}`;
+          localStorage.setItem("lastVisited", hash);
+          window.location = hash;
+        });
+      });
+    </script>
+  </head>
+  <body>
+    {{#albums}}
+    <div class="album" id="pos-{{ position }}">
+      <div class="album-image"><img src="{{ localImg }}" loading="lazy" /></div>
+      <div>
+        <h2>
+          <a href="#pos-{{ position }}">{{ position }}. {{{ title }}}</a>
+        </h2>
+        <p><b>{{{ subtitle }}}</b></p>
+        <p class="album-icons">
+          <a target="_blank" href="{{ vkMusicLink }}" class="vkmusic"></a>
+          <a
+            target="_blank"
+            href="{{ yandexMusicLink }}"
+            class="yandexmusic"
+          ></a>
+          <a target="_blank" href="{{ spotifyLink }}" class="spotify"></a>
+          <a target="_blank" href="{{ discogsLink }}" class="discogs"></a>
+        </p>
+        <div>{{{ description }}}</div>
+      </div>
+    </div>
+    {{/albums}}
+    <div class="footer"><button id="random">Random Album</button></div>
+  </body>
+</html>
