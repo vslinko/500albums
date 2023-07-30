@@ -66,33 +66,12 @@
         }
       }
     </style>
-    <!-- <script>
-      document.addEventListener("click", (e) => {
-        const href = e.target.href;
-        if (!href) {
-          return;
-        }
-        const hash = new URL(href).hash;
-        if (hash.startsWith("#pos-")) {
-          localStorage.setItem("lastVisited", hash);
-        }
-      });
-      window.addEventListener("load", () => {
-        const lastVisited = localStorage.getItem("lastVisited");
-        if (lastVisited) {
-          window.location = lastVisited;
-        }
-      });
-    </script> -->
     <script>
-      window.addEventListener("load", () => {
-        document.querySelector("#random").addEventListener("click", () => {
-          const id = Math.ceil(Math.random() * 500);
-          const hash = `#pos-${id}`;
-          localStorage.setItem("lastVisited", hash);
-          window.location = hash;
-        });
-      });
+      function randomAlbum() {
+        const id = Math.ceil(Math.random() * 500);
+        const el = document.querySelector(`#pos-${id}`);
+        el.scrollIntoView();
+      }
     </script>
   </head>
   <body>
@@ -100,9 +79,7 @@
     <div class="album" id="pos-{{ position }}">
       <div class="album-image"><img src="{{ localImg }}" loading="lazy" /></div>
       <div>
-        <h2>
-          <a href="#pos-{{ position }}">{{ position }}. {{{ title }}}</a>
-        </h2>
+        <h2>{{ position }}. {{{ title }}}</h2>
         <p><b>{{{ subtitle }}}</b></p>
         <p class="album-icons">
           <a target="_blank" href="{{ vkMusicLink }}" class="vkmusic"></a>
@@ -118,6 +95,8 @@
       </div>
     </div>
     {{/albums}}
-    <div class="footer"><button id="random">Random Album</button></div>
+    <div class="footer">
+      <button onclick="randomAlbum()">Random Album</button>
+    </div>
   </body>
 </html>
