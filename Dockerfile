@@ -6,4 +6,4 @@ RUN npm ci
 ADD ./images /500albums/images
 ADD ./500albums.json ./template.html ./index.mjs /500albums
 EXPOSE 8080/tcp
-ENTRYPOINT ["node", "index.mjs"]
+ENTRYPOINT ["tini", "--", "node", "index.mjs"]
